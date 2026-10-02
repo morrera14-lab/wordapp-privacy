@@ -29,23 +29,32 @@
 <body>
 
   <h1>WordApp Privacy Policy</h1>
-  <p class="subtitle">Last updated: 26 September 2026</p>
+  <p class="subtitle">Last updated: 2 October 2026</p>
 
   <p>WordApp ("we", "us", or "our") is a daily devotional app designed to support personal scripture study, reflection, and prayer. This Privacy Policy explains what information we collect, how we use it, and your rights in relation to it.</p>
+
+  <p>WordApp is published by Oghenetega Ighofose, an individual developer in the United Kingdom, who is the data controller for the personal data described here. You can contact the controller at <a href="mailto:support@wordapp.app">support@wordapp.app</a>.</p>
 
   <hr class="divider" />
 
   <h2>1. Information We Collect</h2>
   <p>We collect the minimum information required to provide the service:</p>
   <ul>
-    <li><strong>Account information:</strong> When you create an account, we collect your email address and a hashed password via Supabase Auth.</li>
-    <li><strong>Devotional data:</strong> Your daily reflections, completed devotionals, reading streak, and chosen Bible translation are stored in our Supabase database and associated with your account.</li>
-    <li><strong>Community data:</strong> If you use Circles, we store your group membership, prayer requests you share with your group, and Gatherings RSVPs, all associated with your account and visible only to members of your Circle.</li>
+    <li><strong>Account information:</strong> When you create an account with an email address, we collect your email address and a hashed password via Supabase Auth.</li>
+    <li><strong>Sign in with Apple:</strong> If you choose Continue with Apple, Apple confirms who you are and gives the app a signed token. We pass that token to Supabase Auth, which creates or signs in to your account and records the email address Apple shares with us and an identifier for your Apple account. If you chose Hide My Email, the address is a private relay address that Apple creates and forwards to your real email; we never see your real address unless you give it to us. Apple may also offer your name; WordApp does not store it.</li>
+    <li><strong>Devotional data:</strong> If you are signed in, your daily reflections, completed devotionals, reading streak, and chosen Bible translation are stored in our Supabase database and associated with your account.</li>
+    <li><strong>Community data:</strong> If you use Circles, we store, associated with your account: the name you choose to use in each Circle, your membership and role (member, co-leader or leader), your answers to a session's questions and study checks, notes and highlights you add to a verse in a session, prayer requests you share and the "I prayed" and "answered" marks on them, your Gatherings RSVPs, and the meeting times a leader sets. All of this is visible only to the members of that Circle; a prayer request marked "Only the leaders can see this" is visible only to you and the Circle's leaders.</li>
+    <li><strong>Reports and blocks:</strong> If you report another member, we store your report, who it is about, and which answer or note it concerns. Our safeguarding reviewers read the report and the reported text so they can act on it. If you block someone, we store that so their words stay hidden from you.</li>
+    <li><strong>Feedback:</strong> If you use "Send feedback to the WordApp team" in Companion, we store your message, the kind of feedback you chose, the screen you sent it from, the app version and the platform, linked to your account if you are signed in. It is read by the people who build the app, and used only to fix and improve it.</li>
     <li><strong>Help searches:</strong> When you search the in-app help guide, we record the search text and whether it found an answer, so we can improve the guide. These records are not linked to your account activity or your reflections, and are never used for anything except improving help content.</li>
-    <li><strong>App usage counts:</strong> When you share a Circle invite or open the Companion, we record that it happened (which Circle, or where in the app you opened it from, and when), linked to your account. We use these records only to count how Circles and the Companion are used, so we can improve them. We never record what you write or read, and these records aren't visible to anyone in the app.</li>
+    <li><strong>App usage counts:</strong> When you share a Circle invite, open the Companion, or ask the Companion something, we record that it happened (which Circle, where in the app you opened the Companion from, or which kind of answer it found, such as a verse reference or a feature, and when), linked to your account. We use these records only to count how Circles and the Companion are used, so we can improve them. We never record what you write, type or read, and these records aren't visible to anyone in the app.</li>
     <li><strong>Device information:</strong> Standard platform data (iOS version, device type) used solely for crash reporting and compatibility.</li>
+    <li><strong>TestFlight beta feedback:</strong> If you test a beta version of WordApp through Apple's TestFlight and send feedback or a crash report, Apple passes it to us. It can include your comments, any screenshot you attach, details about your device (such as its model, iOS version, battery level and network type) and the name and email address Apple holds for you as a tester. We use it only to fix and improve the app. Apple's own handling of it is covered by <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.</li>
   </ul>
-  <p>We do <strong>not</strong> collect your name, phone number, location, contacts, camera access, or any biometric data.</p>
+
+  <p><strong>Kept only on your phone.</strong> Some things you create in WordApp are never sent to us: your answers to the questions when you first set up the app, Bible highlights, saved verses, personal notes on a verse, your reminder times, your display settings, and your plans and journal in My own plan. When you sign out, they are cleared, except your plans and journal in My own plan, which stay on this phone for when you sign back in. All of them are removed when you delete your account in the app, or when you delete WordApp. Like other app data, they may be included in your phone's own backup (to iCloud or a computer) if you have backups turned on; that backup is between you and Apple.</p>
+
+  <p>We do <strong>not</strong> ask for your real name: the name you use in a Circle is your choice, and we don't keep the name Apple may offer at sign-in. We do <strong>not</strong> collect your phone number, location, contacts, camera access, or any biometric data.</p>
 
   <hr class="divider" />
 
@@ -53,48 +62,67 @@
   <ul>
     <li>To provide and maintain the app — storing your reflections and streak so they persist across devices.</li>
     <li>To restore your progress if you reinstall the app or change devices.</li>
-    <li>To power Circles — sharing prayer requests and Gatherings plans with the members of your group.</li>
-    <li>To deliver premium features (if applicable) via RevenueCat subscription management.</li>
+    <li>To power Circles — sharing prayer requests, answers, notes and Gatherings plans with the members of your group.</li>
+    <li>To review reports and keep Circles safe.</li>
+    <li>To read your feedback and fix what you tell us about.</li>
     <li>To diagnose crashes and performance issues so we can fix them quickly.</li>
   </ul>
   <p>We do <strong>not</strong> use your information for advertising, sell it to third parties, or share it with anyone outside the service providers listed below.</p>
 
   <hr class="divider" />
 
-  <h2>3. Third-Party Services</h2>
+  <h2>3. Religious Belief and What You Share in Circles</h2>
+  <p>Some of what you write in WordApp — your reflections, and the prayer requests, answers and notes you share in a Circle — can reveal your religious beliefs. UK data protection law treats information about religious belief as "special category" data (UK GDPR Article 9) and gives it extra protection.</p>
+  <p><strong>Our lawful basis.</strong> We process this information on the basis of your explicit consent (UK GDPR Article 9(2)(a)). You give it for Circles by tapping <strong>I agree</strong> on the notice WordApp shows the first time you start, join or post in a Circle ("What you share can show your faith"), which says that what you post can show your religious beliefs and will be shown to that Circle's members. You give it for your reflections when you create an account, by ticking the box that says WordApp will save your reflections, which can show your faith, to your account, or by continuing with Apple under the same statement. We keep a record of when you agreed and to which wording. Nothing you write is required to use WordApp: you can read without an account, and without joining a Circle.</p>
+  <p><strong>Withdrawing your consent.</strong> You can withdraw your consent at any time. Withdrawing doesn't affect anything we did before you withdrew it. You can:</p>
+  <ul>
+    <li>change an answer you posted in a Circle session, by tapping it and editing it;</li>
+    <li>delete a prayer request, answer or note you posted, by tapping <strong>delete</strong> on it; it is gone for the whole Circle;</li>
+    <li>leave a Circle and take your posts with you, with <strong>Leave and remove my posts</strong> on the Circle's page; this deletes your answers, study-check answers, prayer requests, notes and highlights in that Circle;</li>
+    <li>ask us to delete anything else you posted, by emailing <a href="mailto:support@wordapp.app?subject=Delete%20a%20post">support@wordapp.app</a> with the Circle's name and roughly what and when you posted; we will delete it within one month;</li>
+    <li>delete your account (Settings → Data &amp; Account → Delete account &amp; data), which deletes your reflections and everything you posted in every Circle.</li>
+  </ul>
+  <p>Leaving a Circle with the plain <strong>Leave this Circle</strong> stops you seeing it and posting in it, but does not delete what you already posted there: that stays visible to the Circle's members. To take it with you, use <strong>Leave and remove my posts</strong> instead, or one of the other options above. If something you deleted had been reported, the report is kept for our safeguarding reviewers, without your words.</p>
+
+  <hr class="divider" />
+
+  <h2>4. Third-Party Services</h2>
   <p>We use the following third-party services, each operating under their own privacy policies:</p>
   <ul>
     <li><strong>Supabase</strong> — Authentication and database storage. Data is stored in EU/US data centres with row-level security (you can only access your own data). <a href="https://supabase.com/privacy" target="_blank">Supabase Privacy Policy</a></li>
+    <li><strong>Apple</strong> — Sign in with Apple, TestFlight beta testing, and App Store distribution. <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a></li>
     <li><strong>Sentry</strong> — Crash reporting and performance monitoring. Collects anonymised crash logs and device diagnostics; not linked to your account identity. <a href="https://sentry.io/privacy/" target="_blank">Sentry Privacy Policy</a></li>
-    <li><strong>RevenueCat</strong> — In-app purchase and subscription management. Handles purchase receipts only; no financial data is stored by us. <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a></li>
+    <li><strong>Bible text and word study</strong> — When you open a passage or a word study, the app requests that text from API.Bible, bolls.life or STEP Bible. These requests name the passage, not you or your account, but like any request over the internet they reveal your device's IP address to that service.</li>
+    <li><strong>RevenueCat</strong> — Not in use at present. If we offer paid features in future, RevenueCat will handle in-app purchase receipts; no financial data is stored by us. <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a></li>
   </ul>
 
   <hr class="divider" />
 
-  <h2>4. Data Retention</h2>
-  <p>Your data is retained for as long as your account exists. If you delete your account from inside the app (Settings → Data &amp; Account → Delete account &amp; data), your account and all associated data — reflections, streak, community data, and credentials — are permanently deleted from our systems immediately. To request deletion by email instead, contact us at the address below.</p>
+  <h2>5. Data Retention</h2>
+  <p>Your data is retained for as long as your account exists. If you delete your account from inside the app (Settings → Data &amp; Account → Delete account &amp; data), your account and all associated data — reflections, streak, community data, and credentials — are permanently deleted from our systems immediately, and everything WordApp stored on your phone is cleared. Feedback messages you sent us are kept, with the link to your account removed. To request deletion by email instead, contact us at the address below.</p>
 
   <hr class="divider" />
 
-  <h2>5. Children's Privacy</h2>
+  <h2>6. Children's Privacy</h2>
   <p>WordApp is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it promptly.</p>
 
   <hr class="divider" />
 
-  <h2>6. Your Rights</h2>
+  <h2>7. Your Rights</h2>
   <p>Depending on your location, you may have rights including:</p>
   <ul>
     <li>Access to the personal data we hold about you</li>
     <li>Correction of inaccurate data</li>
     <li>Deletion of your account and associated data</li>
     <li>Data portability (export of your reflections)</li>
+    <li>Withdrawing your consent (see section 3)</li>
   </ul>
   <p>To exercise any of these rights, contact us using the details below.</p>
   <p><strong>Complaints.</strong> If you're unhappy with how we've handled your personal data, email <a href="mailto:support@wordapp.app?subject=Data%20complaint">support@wordapp.app</a> with the subject "Data complaint". We'll acknowledge it within 30 days and tell you what we're doing about it. You can also complain to the UK Information Commissioner's Office (<a href="https://ico.org.uk/make-a-complaint/">ico.org.uk</a>).</p>
 
   <hr class="divider" />
 
-  <h2>7. Changes to This Policy</h2>
+  <h2>8. Changes to This Policy</h2>
   <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the "Last updated" date at the top of this page. Continued use of the app after any change constitutes acceptance of the updated policy.</p>
 
   <hr class="divider" />
@@ -102,7 +130,7 @@
   <div class="contact">
     <h2 style="margin-top: 0;">Contact</h2>
     <p>If you have questions about this Privacy Policy or want to exercise your data rights, contact us at:</p>
-    <p><a href="mailto:morrera14@gmail.com">morrera14@gmail.com</a></p>
+    <p><a href="mailto:support@wordapp.app">support@wordapp.app</a></p>
   </div>
 
 </body>
