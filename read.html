@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Read this with me · WordApp</title>
+<style>
+  :root { color-scheme: light dark; --bg: #f5efe0; --ink: #2b2118; --dim: #6b5d4a; --gold: #8a5a0b; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #14110d; --ink: #efe6d2; --dim: #b3a58c; --gold: #d4a64a; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: Georgia, "EB Garamond", serif; line-height: 1.6; }
+  main { max-width: 34rem; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+  .kicker { font-size: .8rem; letter-spacing: .18em; text-transform: uppercase; color: var(--dim); }
+  blockquote { margin: 1.25rem 0 .5rem; font-size: 1.35rem; }
+  .ref { color: var(--gold); margin: 0 0 2rem; }
+  p.note { color: var(--dim); font-size: 1rem; }
+  a { color: var(--gold); }
+</style>
+</head>
+<body>
+<main>
+  <p class="kicker">Read this with me</p>
+  <blockquote id="verse"></blockquote>
+  <p class="ref" id="ref"></p>
+  <p class="note">This is a verse from the Bible, shared by someone who thought of you. Nothing is kept about you for opening it.</p>
+  <p class="note"><a href="https://wordapp.app">WordApp</a> is a daily Bible reading app.</p>
+</main>
+<script>
+  // Reads only what the link carries and writes it with textContent: no sign-in, no network call, no storage.
+  (function () {
+    var q = new URLSearchParams(location.search);
+    var t = (q.get("t") || "").slice(0, 600);
+    var r = (q.get("r") || "").slice(0, 80);
+    var v = (q.get("v") || "").slice(0, 8);
+    if (!t || !r) {
+      document.getElementById("verse").textContent = "This link has no verse in it.";
+      return;
+    }
+    document.getElementById("verse").textContent = "“" + t + "”";
+    document.getElementById("ref").textContent = "— " + r + (v ? " (" + v + ")" : "");
+    document.title = r + " · Read this with me";
+  })();
+</script>
+</body>
+</html>
